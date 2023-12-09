@@ -1,0 +1,153 @@
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: whitesmoke;
+  background: linear-gradient(to right, #0000CD, #FFD700, #DC143C);
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  text-align: center;
+  background-color: black;
+}
+
+h1 span {
+  display: inline-block;
+}
+
+.blue {
+  color: #0000CD;
+}
+
+.yellow {
+  color: #FFD700;
+}
+
+.red {
+  color: #DC143C;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #000000;
+  padding: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+nav a:hover,
+nav a.current {
+  background-color: #4a69bd;
+}
+
+.container {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.map-image {
+  width: 100%;
+  height: auto;
+  border-radius: 5px 5px 0 0;
+}
+
+.text-container {
+  padding: 20px;
+  border-radius: 0 0 5px 5px;
+}
+
+.container p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+  }
+
+  .map-image {
+    width: 50%;
+    border-radius: 5px 0 0 5px;
+  }
+
+  .text-container {
+    width: 50%;
+    border-radius: 0 5px 5px 0;
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #000000;
+  color: white;
+}
+
+.anthem-section {
+  margin-top: 20px;
+  background: linear-gradient(to right, #0000CD, #FFD700, #DC143C);
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Alineación del contenido al centro */
+}
+
+.anthem-section h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+audio {
+  width: 100%; /* Asegura que el reproductor de audio ocupe el 100% del contenedor */
+  margin-top: 10px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+      font-size: 2em;
+  }
+
+  nav {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  nav a {
+      margin: 5px 0;
+  }
+}
+
+
+
+  
+
+
+ 
+
